@@ -19,7 +19,7 @@ run = "pnpm --filter @workspace/matcha-store run dev"
 
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/matcha-store", "run", "build" ]
-publicDir = "artifacts/matcha-store/dist/public"
+publicDir = "artifacts/matcha-store/dist"
 serve = "static"
 
 [[services.production.rewrites]]
