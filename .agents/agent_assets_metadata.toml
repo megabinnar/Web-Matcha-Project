@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "ISTqZ4vHji2haH_FyMcPJ"
+uri = "file://attached_assets/hero-matcha.png"
+type = "image"
+title = "Hero matcha preparation"
+
+[[generated]]
+id = "qJFub_R5ufkv53CwzgSZt"
+uri = "file://attached_assets/product-1.png"
+type = "image"
+title = "Ceremonial matcha powder"
+
+[[generated]]
+id = "bX-IyiuQsDAwRMifPrq9l"
+uri = "file://attached_assets/product-2.png"
+type = "image"
+title = "Matcha latte in cup"
+
+[[generated]]
+id = "n1sRpXtWP6Qdm81AwLz2U"
+uri = "file://attached_assets/product-3.png"
+type = "image"
+title = "Sakura matcha tea"
+
+[[generated]]
+id = "FrFbGgr5Fd6ZBAH6zfH-9"
+uri = "file://attached_assets/product-4.png"
+type = "image"
+title = "Organic matcha powder"
+
+[[generated]]
+id = "pibT-9zxw-gcVJJosXAQG"
+uri = "file://attached_assets/product-5.png"
+type = "image"
+title = "Hojicha matcha blend"
+
+[[generated]]
+id = "XSee8K2wGV0B696kgkoh7"
+uri = "file://attached_assets/product-6.png"
+type = "image"
+title = "Matcha starter kit"
+
+[[generated]]
+id = "hYm61-iY61GM6PKDZ4lLl"
+uri = "file://attached_assets/category-1.png"
+type = "image"
+title = "Ceremonial matcha bowls"
+
+[[generated]]
+id = "B0JpwiS9ajgYUeiQHctqm"
+uri = "file://attached_assets/category-2.png"
+type = "image"
+title = "Matcha latte art"
+
+[[generated]]
+id = "R1HZydtcwD4_s2bQZqBaB"
+uri = "file://attached_assets/category-3.png"
+type = "image"
+title = "Matcha desserts assortment"
