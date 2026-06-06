@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Menu, X, Instagram, Twitter, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SiInstagram, SiX, SiTiktok } from "react-icons/si";
+import { SiInstagram, SiX, SiTiktok, SiWhatsapp } from "react-icons/si";
 
 // Mock @assets imports (assuming vite resolves this or we provide correct paths)
 // Actually, I'll use standard relative or absolute paths based on typical setups.
@@ -371,6 +371,30 @@ function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <motion.a
+        href="https://wa.me/6287655712?text=Halo%20Uma%20Matcha%2C%20saya%20ingin%20bertanya%20tentang%20produk%20matcha%20Anda"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="button-whatsapp-float"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] text-white rounded-full shadow-2xl overflow-hidden group"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1.2, type: "spring", stiffness: 200 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <span className="flex items-center justify-center w-14 h-14 shrink-0">
+          <SiWhatsapp size={26} />
+        </span>
+        <span className="max-w-0 group-hover:max-w-xs transition-all duration-500 ease-in-out overflow-hidden whitespace-nowrap pr-0 group-hover:pr-5 text-sm font-semibold">
+          Chat with Us
+        </span>
+
+        {/* Pulse ring */}
+        <span className="absolute inset-0 rounded-full animate-ping bg-[#25D366] opacity-30 pointer-events-none" />
+      </motion.a>
     </div>
   );
 }
