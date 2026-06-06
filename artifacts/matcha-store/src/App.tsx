@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
@@ -22,8 +20,6 @@ import cat1Img from "@assets/category-1.png";
 import cat2Img from "@assets/category-2.png";
 import cat3Img from "@assets/category-3.png";
 import cat4Img from "@assets/product-6.png"; // Fallback as image generation limit reached
-
-const queryClient = new QueryClient();
 
 // Types
 type CartItem = {
@@ -399,37 +395,12 @@ function Home() {
   );
 }
 
-function Router() {
-  return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
-
-// Fallback for missing NotFound component in App.tsx
-function NotFound() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-serif mb-4">404</h1>
-        <p className="text-muted-foreground">Page not found</p>
-      </div>
-    </div>
-  );
-}
-
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL?.replace(/\/$/, "")}>
-          <Router />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <Home />
+      <Toaster />
+    </TooltipProvider>
   );
 }
 
