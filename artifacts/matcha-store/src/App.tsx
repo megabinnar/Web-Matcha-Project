@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Menu, X, Instagram, Twitter, MessageCircle } from "lucide-react";
+import { ShoppingCart, Menu, X, Plus, Minus, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SiInstagram, SiX, SiTiktok, SiWhatsapp } from "react-icons/si";
 
